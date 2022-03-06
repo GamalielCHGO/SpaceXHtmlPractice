@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Dulce Conexion</title>
+</head>
+<body>
+    <h1><img src="Dulce conexion.png" alt="Logo de la empresa" width="100" height="100"> Pasteleria Dulce Conexion <img src="Dulce conexion.png" alt="Logo de la empresa" width="100" height="100"></h1>
+    <h2>bienvenidos a la pasteleria donde te llevamos al cielo con nuestros sabores</h2>
+
+    <h3>Arma tu pastel a tu medida</h3>
+    <hr>
+    <form action="terminarPedido.html">
+        <!-- sabor -->
+        <h4>Escoge el sabor</h4>
+        <input type="radio" name="vainilla" id="vainilla">
+        <label for="vainilla">vainilla $20 x kg</label>
+        <br>
+        <input type="radio" name="chocolate" id="chocolate">
+        <label for="chocolate">chocolate $25 x kg</label>
+        <br>
+        <input type="radio" name="fresa" id="fresa">
+        <label for="fresa">fresa $30 x kg</label>
+        <br>
+        <!-- tamano -->
+        <h4>Selecciona el tamaño (1kg=10personas)</h4>
+        <input type="number" name="tamano" id="tamano" value="2" required>
+        <label for="tamano">Kg(s)</label>
+        <br>
+
+        <!-- adornos -->
+        <h4>Selecciona el adorno</h4>
+        <input type="radio" name="adorno1" id="adorno1">
+        <label for="adorno1">Fruta $90 x kg<img src="fruta.jpg" alt="frutas" width="100" height="100"></label>
+
+        <input type="radio" name="adorno1" id="adorno2">
+        <label for="adorno2">Flores $50 x kg<img src="flores.jpg" alt="flores" width="100" height="100"></label>
+
+        <input type="radio" name="adorno1" id="adorno3">
+        <label for="adorno3">Chocolate $80 x kg<img src="chocolate.jpg" alt="chocolate" width="100" height="100"></label>
+
+        <input type="radio" name="adorno1" id="adorno4">
+        <label for="adorno4">Adorno cumpleaños $50<img src="cumple.jpg" alt="cumpleaños" width="100" height="100"></label>
+        <br>
+        <!-- A donde y quien le llevamos el pedido? -->
+        <h3>A quien y donde entregamos el pastel?</h3>
+        <!-- Nombre, Teléfono, Correo Electrónico, Descripción general del pastel y la selección de sabores y adornos. -->
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br><br>
+        <label for="telefono">Telefono celular:</label>
+        <input type="number" name="telefono" id="telefono" maxlength="10" required>
+        <br><br>
+        <label for="email">Correo electronico</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="desripcion">Describenos como imaginas tu pastel</label>
+        <input type="text" name="desripcion" id="desripcion" maxlength="1000" required>
+        <br><br>
+        <label for="fechaEntrega">Fecha entrega</label>
+        <input type="date" name="fechaEntrega" id="fechaEntrega" required>
+        <h3>Finaliza tu pedido</h3>
+        <input type="reset" value="Reiniciar pedido">
+        <input type="submit" value="Realizar pedido">
+    </form>
+    <form action="visualizaPedidos.html">
+        <input type="submit" value="Visualiza Pedido">
+    </form>
+    
+</body>
+</html>
